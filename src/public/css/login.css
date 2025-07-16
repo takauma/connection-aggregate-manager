@@ -1,0 +1,60 @@
+body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#contents-wrap {
+	height: 100%;
+	width: 100%;
+}
+
+#contents {
+	background-color: #EAEAEA;
+	padding: 60px 10px;
+	border-radius: 50px;
+	filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
+}
+
+#header {
+	width: 100%;
+	margin-bottom: 35px;
+}
+
+#header H1 {
+	font-size: 45px;
+	text-shadow: rgba(0, 0, 0, 0.1) 4px 2px 2px;
+	font-weight: normal;
+	padding: 0 20px;
+}
+
+form {
+	width: 600px;
+}
+
+#input .form-group {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 10px;
+}
+
+#input {
+	width: 100%;
+}
+
+#signup-wrap {
+	height: 86px;
+}
+
+#msg {
+	height: 60px;
+	color: #FF0000;
+}
+
+#footer {
+	width: 400px;
+}
+
+#send {
+	border-radius: 2rem !important;
+}

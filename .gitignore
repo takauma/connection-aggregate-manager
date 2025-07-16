@@ -1,0 +1,8 @@
+src/public/hot/*
+src/public/storage/*
+src/public/build/assets/*
+src/node_modules/*
+src/storage/framework/views/*
+src/vendor/*
+logs/laravel/*
+logs/nginx/*

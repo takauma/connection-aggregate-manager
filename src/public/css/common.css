@@ -1,0 +1,63 @@
+:root {
+	--bg-dark: #343a40;
+}
+
+.table td, .table th {
+	padding: .75rem !important;
+	line-break: anywhere;
+	vertical-align: middle;
+}
+
+.table tr>th {
+	font-weight: normal;
+}
+
+.nav-active {
+	color: #FFFFFF !important;
+	font-weight: bold;
+}
+
+.navbar {
+	background-color: var(--bg-dark) !important;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+body {
+	font-family: none;
+}
+
+.form-check-input {
+	height: 20px !important;
+}
+
+.form-switch .form-check-input {
+	width: 2.5em;
+}
+
+.icon-check {
+	content: "";
+	width: 20px;
+	height: 10px;
+	border-left: 2px solid var(--bs-primary);
+	border-bottom: 2px solid var(--bs-primary);
+	transform: rotate(-45deg);
+}
+
+#header-li-user, #header-li-role {
+	color: #D4D4D4;
+	line-break: anywhere;
+}
+
+#header-li-user {
+	margin-right: 15px;
+}
+
+#header-li-role {
+	margin-right: 1rem;
+}
+
+.sort {
+	color: #FFFFFF;
+	text-decoration: none;
+}

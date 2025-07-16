@@ -1,0 +1,15 @@
+.th-toggle {
+	min-width: 100px;
+}
+
+.icon-check-wrap {
+	display: flex;
+	height: 17px;
+	justify-content: center;
+	align-items: center;
+}
+
+#right-form {
+	gap:10px;
+	padding-right: 6px;
+}

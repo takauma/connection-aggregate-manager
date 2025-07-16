@@ -1,0 +1,119 @@
+body {
+	background-color: #F1F1F1;
+}
+
+#viewType {
+	margin-right: 10px;
+}
+
+#bound-list-area {
+	margin: 10px 0;
+	display: none;
+}
+
+#bound-list-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#bound-list-block {
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.bound-list-title {
+	font-size: 14px;
+}
+
+#temperature {
+	background-color: rgb(31, 119, 180);
+}
+
+#humidity {
+	background-color: rgb(255, 127, 14);
+}
+
+#brightness{
+	background-color: rgb(44, 160, 44);
+}
+
+.bound-list-item {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+}
+
+.bound-list-value {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	font-size: 22px;
+}
+
+#chart-title {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#chart-wrap {
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	min-height: 64px;
+}
+
+#chart-controll {
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+#chart-area {
+	display: none;	
+}
+
+#chart {
+	margin: 0 10px;
+}
+
+#calendar {
+	background-color: #FFFFFF !important;
+	display: inline-block;
+}
+
+.altInput {
+	background-color: #FFFFFF !important;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#noRegisteredBoundMsg{
+	display: none;
+	padding-left: 20px;
+	color: #FF0000;
+}
+
+#noDataMsg {
+	display: none;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	color: #495057;
+}
+
+#boundList, #viewType {
+	width: 250px;
+	display: inline-block;
+}
+
+#calendar, .altInput {
+	width: 400px !important;
+}

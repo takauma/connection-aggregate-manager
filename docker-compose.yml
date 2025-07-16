@@ -1,0 +1,46 @@
+version: '3'
+services:
+  nginx:
+    container_name: "connection-aggregate-manager-nginx"
+    build:
+      context: ./docker/nginx
+    restart: no
+    depends_on:
+      - app
+    ports:
+      - 8080:8080
+    volumes:
+      - ./src/public:/src/public
+      - ./logs/nginx:/logs
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    networks: 
+     - shared
+
+  app:
+    container_name: "connection-aggregate-manager-app"
+    build:
+      context: ./docker/php
+    restart: no
+    volumes:
+      - ./src:/src
+      - node_modules:/src/node_modules
+      - vendor:/src/vendor
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ./php/zz-docker.conf:/usr/local/etc/php-fpm.d/zz-docker.conf
+      - ./logs/laravel:/src/storage/logs
+    networks: 
+     - shared
+volumes:
+  node_modules:
+    name: cam-node_modules
+    driver: local
+  vendor:
+    name: cam-vendor
+    driver: local
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.19.0.0/24
+  shared:
+    external: true
